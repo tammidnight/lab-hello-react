@@ -1,0 +1,25 @@
+.bgDark {
+  background-color: rgb(10, 10, 56);
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  align-self: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.contentTwo {
+  display: flex;
+  justify-content: space-around;
+}
