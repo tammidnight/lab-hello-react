@@ -1,10 +1,10 @@
 function Header() {
   return (
-    <div class="header">
+    <div className="header">
       <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/ironhack-logo-xs.png"></img>
       <img
         src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/menu-top-xs.png"
-        class="hamburger"
+        className="hamburger"
       ></img>
     </div>
   );
@@ -27,7 +27,7 @@ function HeaderText() {
 
 function ContentOne() {
   return (
-    <div class="bgDark">
+    <div className="bgDark">
       <Header />
       <HeaderText />
     </div>
@@ -76,7 +76,7 @@ function JSX() {
 
 function ContentTwo() {
   return (
-    <div class="contentTwo">
+    <div className="contentTwo">
       <Declarative />
       <Components />
       <SingleWay />
