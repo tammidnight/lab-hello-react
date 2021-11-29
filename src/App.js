@@ -1,11 +1,16 @@
+import logo from "./images/ironhack-logo-xs.png";
+import hamburger from "./images/menu-top-xs.png";
+import iconOne from "./images/icon1.png";
+import iconTwo from "./images/icon2.png";
+import iconThree from "./images/icon3.png";
+import iconFour from "./images/icon4.png";
+import "./App.css";
+
 function Header() {
   return (
     <div className="header">
-      <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/ironhack-logo-xs.png"></img>
-      <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/menu-top-xs.png"
-        className="hamburger"
-      ></img>
+      <img src={logo} alt=""></img>
+      <img src={hamburger} className="hamburger" alt=""></img>
     </div>
   );
 }
@@ -37,7 +42,7 @@ function ContentOne() {
 function Declarative() {
   return (
     <div>
-      <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon1.png"></img>
+      <img src={iconOne} alt=""></img>
       <h3>Declarative</h3>
       <p>React makes it painless to create interactive UIs.</p>
     </div>
@@ -47,7 +52,7 @@ function Declarative() {
 function Components() {
   return (
     <div>
-      <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon2.png"></img>
+      <img src={iconTwo} alt=""></img>
       <h3>Components</h3>
       <p>Build encapsulated components that manage their state.</p>
     </div>
@@ -57,7 +62,7 @@ function Components() {
 function SingleWay() {
   return (
     <div>
-      <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon3.png"></img>
+      <img src={iconThree} alt=""></img>
       <h3>Single-Way</h3>
       <p>A set of immutable values are passed to the component's.</p>
     </div>
@@ -67,7 +72,7 @@ function SingleWay() {
 function JSX() {
   return (
     <div>
-      <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon4.png"></img>
+      <img src={iconFour} alt=""></img>
       <h3>JSX</h3>
       <p>Statically-typed, designed to run on modern browsers.</p>
     </div>
@@ -85,7 +90,7 @@ function ContentTwo() {
   );
 }
 
-function MyApp() {
+function App() {
   return (
     <div>
       <ContentOne />
@@ -94,4 +99,4 @@ function MyApp() {
   );
 }
 
-ReactDOM.render(<MyApp />, document.querySelector("#app"));
+export default App;
